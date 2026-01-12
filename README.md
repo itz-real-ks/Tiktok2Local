@@ -49,9 +49,20 @@ no silent fallbacks, no watermarked downloads.
 
 <p>Install:</p>
 
+### Linux or MacOs
+<pre><code>python -m venv .venv
+source .venv/bin/activate</code></pre>
+### Windows 10
+else needed curl, setupped in system variables to be called by subprocess
+else try <pre><code>curl api64.ipify.org</pre></code> 
+to know your ip.
+
+Else can <a href="https://youtu.be/cl186ePedMg">Follow me up </a> to setup on your system.
+
+
 <pre><code>pip install -r requirements.txt
 </code></pre>
-
+  
 <hr/>
 
 <h2>🚀 Installation</h2>
@@ -82,7 +93,7 @@ If <code>video_no_watermark</code> is missing →
 
 <h3>Download a single video</h3>
 
-<pre><code>python tiktok_dl.py --id 7516724876304977183
+<pre><code>python app.py --id 7516724876304977183
 </code></pre>
 
 <p>Saves as:</p>
@@ -94,21 +105,21 @@ If <code>video_no_watermark</code> is missing →
 
 <h3>Download multiple videos</h3>
 
-<pre><code>python tiktok_dl.py --id 7516724876304977183 1234567890123456789
+<pre><code>python app.py --id 7516724876304977183 1234567890123456789
 </code></pre>
 
 <hr/>
 
 <h3>Custom output directory</h3>
 
-<pre><code>python tiktok_dl.py --id 7516724876304977183 --out my_videos
+<pre><code>python app.py --id 7516724876304977183 --out my_videos
 </code></pre>
 
 <hr/>
 
 <h3>Custom filename</h3>
 
-<pre><code>python tiktok_dl.py --id 7516724876304977183 --name custom_name.mp4
+<pre><code>python app.py --id 7516724876304977183 --name custom_name.mp4
 </code></pre>
 
 <p>
@@ -120,7 +131,7 @@ If <code>video_no_watermark</code> is missing →
 
 <h3>Custom CSV log file</h3>
 
-<pre><code>python tiktok_dl.py --id 7516724876304977183 --log results.csv
+<pre><code>python app.py --id 7516724876304977183 --log results.csv
 </code></pre>
 
 <hr/>
